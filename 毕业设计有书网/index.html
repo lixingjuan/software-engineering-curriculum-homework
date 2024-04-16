@@ -1,0 +1,816 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>有书网-为中国大学生解决买卖二手书困难问题，实现资源的回收重利用</title>
+<link href="index.css" type="text/css" rel="stylesheet">
+<script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<nav class="nav-container">
+	<div class="nav-top-container">
+		<ul class="nav-top">
+			<li class="site">郑州市</li>
+			<li class="entry item">登录</li>
+			<li class="register item">注册</li>
+			<li class="introduction item">网站介绍</li>	
+			<li class="message item">我的消息</li>	
+			<li class="service item">客户服务</li>			
+		</ul>
+	</div>
+	<div class="nav-logo">
+		<div class="nav-logo-content">
+			<div class="logo">
+				<img src="images\logo.JPG">
+			</div>
+			<div class="search">
+				<form>
+					<input placeholder="请输入:书名/学校/作者进行搜索">
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="nav-bar">
+		<ul class="nav-bar-content">
+			<li>首页</li>
+			<li>教育</li>
+			<li>经济</li>			
+			<li>管理</li>	
+			<li>历史文学</li>
+			<li>语言学</li>
+			<li>法学</li>			
+			<li>医药学</li>
+			<li>科学技术</li>
+			<li>艺术体育</li>
+			<li>化学化工</li>			
+			<li>农林畜牧</li>			
+		</ul>
+	</div>
+</nav>
+<div class="container-play">
+	<div class="play">
+		<!--图片-->
+		<div class="img_wrap" style="left:0px;">
+			<img src="images/img1.jpg" alt="1">
+			<img src="images/img2.jpg" alt="2">
+			<img src="images/img3.jpg" alt="3">
+			<img src="images/img4.jpg" alt="4">
+			<img src="images/img5.jpg" alt="5">
+		</div>
+		<!--列表小圆点-->
+		<div class="buttons">
+			<span class="on"></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<a href="javascript:;" rel="external nofollow" id="arrow" class="arrow_left">&lt </a>
+		<a href="javascript:;" rel="external nofollow" id="arrow" class="arrow_right">&gt </a>
+	</div>
+</div>
+<div class="container-book">
+	<!-- 这是楼层导引 -->
+	<ul id="guide-wrap">
+		<li class="active"><i>1F</i><span>教育</span></li>
+		<li><i>2F</i><span>经济</span></li>
+		<li><i>3F</i><span>管理</span></li>
+		<li><i>4F</i><span>历史</span></li>
+		<li><i>5F</i><span>文学</span></li>
+		<li><i>6F</i><span>语言</span></li>
+		<li><i>7F</i><span>法学</span></li>
+		<li><i>8F</i><span>科技</span></li>
+		<li><i>9F</i><span>艺术</span></li>
+		<li><i>10F</i><span>化工</span></li>
+		<li><i>11F</i><span>农林</span></li>
+		<li style="border-bottom: none;"><i>12F</i><span>家电</span></li>
+	</ul>
+    <!-- 回顶部 -->
+	<div id="goTop">
+        <span id="erweima">我是二维码</span> Top
+    </div>
+	<!-- 这是楼层内容部分 -->
+	<div id="main" >
+		
+		<div class="floor" style="">
+			<ul class="caption">
+				<li class="caption-img"><img class="decoration" src="images\cloud.png" alt="稍等" class="title"></li>
+				<li class="caption-word">教育书籍</li>
+				<li class="caption-hr"></li>
+			</ul>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="clear" style="clear:both;"></div>
+		</div>
+				<div class="floor" style="">
+			<ul class="caption">
+				<li class="caption-img"><img class="decoration" src="images\cloud.png" alt="稍等" class="title"></li>
+				<li class="caption-word">教育书籍</li>
+				<li class="caption-hr"></li>
+			</ul>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="clear" style="clear:both;"></div>
+		</div>
+		<div class="floor" style="">
+			<ul class="caption">
+				<li class="caption-img"><img class="decoration" src="images\cloud.png" alt="稍等" class="title"></li>
+				<li class="caption-word">教育书籍</li>
+				<li class="caption-hr"></li>
+			</ul>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="clear" style="clear:both;"></div>
+		</div>
+
+		
+		<div class="floor" style="">
+			<ul class="caption">
+				<li class="caption-img"><img class="decoration" src="images\cloud.png" alt="稍等" class="title"></li>
+				<li class="caption-word">教育书籍</li>
+				<li class="caption-hr"></li>
+			</ul>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="clear" style="clear:both;"></div>
+		</div>
+
+		
+		
+		<div class="floor" style="">
+			<ul class="caption">
+				<li class="caption-img"><img class="decoration" src="images\cloud.png" alt="稍等" class="title"></li>
+				<li class="caption-word">教育书籍</li>
+				<li class="caption-hr"></li>
+			</ul>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="clear" style="clear:both;"></div>
+		</div>
+
+		
+		
+		<div class="floor" style="">
+			<ul class="caption">
+				<li class="caption-img"><img class="decoration" src="images\cloud.png" alt="稍等" class="title"></li>
+				<li class="caption-word">教育书籍</li>
+				<li class="caption-hr"></li>
+			</ul>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="book">
+				<a href="#" class="book-image"><img src="images\替代.JPG" alt="叮叮叮~请稍等"></a>
+				<div class="describe">
+					<p class="price"><span class="present-price">￥35</span><span class="original-price">￥65</span></p>
+					<p class="book-title"><a href="#" class="book-title">计算机组成原理/唐朔军/河南师范大学</a></p>
+					<div class="shop-button">
+						<a class="shop" href="#" title="加入购物车"><img src="images/shop.jpg"></a>
+						<a class="collect" href="#" title="收藏"><img src="images/collect.jpg"></a>
+					</div>
+				</div>
+			</div>
+			<div class="clear" style="clear:both;"></div>
+		</div>
+
+	</div>
+</div>
+
+<div class="clear" style="clear:both;"></div>
+<footer>
+	<div class="footer" style="text-align:center;line-height:300px;font-size:30px;color:green;">
+	我是页脚，但是我还没有想好我里面要写什么东西
+	</div>
+</footer>
+
+<script>
+var wrap=document.querySelector("div.play div.img_wrap");
+var next=document.querySelector(".arrow_right");
+var prev=document.querySelector(".arrow_left");
+var index=0;
+next.onclick=function(){
+	next_pic();
+}
+prev.onclick=function(){
+	prev_pic();
+}
+function next_pic(){
+	index++;
+	if(index==5){
+		index=0;
+	}
+	showCurrentDots();
+	var newLeft;
+	if(wrap.style.left==="-4904px"){
+		newLeft=0;
+	}else{
+		newLeft=parseInt(wrap.style.left)-1226;
+	}
+	wrap.style.left=newLeft+"px";
+}
+function prev_pic(){
+	
+	index--;
+	if(index==-1){
+		index=4;
+	}
+	showCurrentDots();
+	var newLeft;
+	if(wrap.style.left==="0px"){
+		newLeft=-4904;
+	}else{
+		newLeft=parseInt(wrap.style.left)+1226;
+	}
+	wrap.style.left=newLeft+"px";
+}
+//定时器
+var timer=null;
+function autoPlay(){
+	timer=setInterval(function(){
+		next_pic();
+	},2000);
+}
+autoPlay();
+//鼠标悬停停止自动播放
+var container=document.querySelector(".play");
+container.onmouseenter=function(){
+	clearInterval(timer);
+}
+container.onmouseleave=function(){
+	autoPlay();
+}
+//小圆点的行为
+var index=0;
+var dots=document.getElementsByTagName("span");
+function showCurrentDots(){
+	for(var i=0;i<dots.length;i++){
+		dots[i].className="";
+	}
+	dots[index].className="on";
+}
+//点击小圆点切换图片
+//点击小圆点控制图片的切换，原理就是改变相应的left值
+for(var i=0,len=dots.length;i<len;i++)	{
+	(function(i){
+		
+		dots[i].onclick=function(){
+			var dis=index-i;
+			wrap.style.left=(parseInt(wrap.style.left)+dis*1226)+"px";
+			index=i;
+			showCurrentDots();
+		}
+	})(i);
+}
+</script>
+<script>
+var guideWrap = $('#guide-wrap'); //导航壳
+    var aNav = guideWrap.find('li'); //导航
+    var aDiv = $('#main .floor'); //楼层
+    var oTop = $('#goTop'); //回到顶部 
+    $(window).scroll(function() {
+        //可视窗口高度
+        var winH = $(window).height();
+        //鼠标滚动的距离
+        var iTop = $(window).scrollTop();
+
+		if(iTop >= 620&&iTop <= 10300) {
+            guideWrap.fadeIn();
+            oTop.fadeIn();
+            //鼠标滑动样式改变
+            aDiv.each(function() {
+                if(winH + iTop - $(this).offset().top > winH / 2) {
+                    aNav.removeClass('active');
+                    aNav.eq($(this).index()).addClass('active');
+                }
+            })
+        } 
+		else if(iTop >= 10300){
+			guideWrap.fadeOut();
+            oTop.fadeOut();
+		}
+		else {
+            guideWrap.fadeOut();
+            oTop.fadeOut();
+        }
+    })
+    //点击回到当前楼层
+    aNav.click(function() {
+        var t = aDiv.eq($(this).index()).offset().top;
+        $('body,html').animate({
+                    "scrollTop": t
+        }, 500);
+        $(this).addClass('active').siblings().removeClass('active');
+    });
+    //回到顶部
+    oTop.click(function() {
+        $('body,html').animate({
+            "scrollTop": 0
+        }, 500)
+    })
+</script>
+</body>
+</html>

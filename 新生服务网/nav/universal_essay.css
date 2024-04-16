@@ -1,0 +1,50 @@
+.sub_right .article{
+	width:800px;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+.sub_right .article .title{
+	height:70px;
+	margin-top:20px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	font-family:宋体;
+	font-size:30px;
+}
+.sub_right .article div.hr{
+	width:800px;
+	height:2px;
+	background-color:#dedede;
+	margin-left:auto;
+	margin-right:auto;
+ }
+.sub_right .info{
+	height:45px;
+	font-size:13px;
+	font-family:黑体;
+	text-align:center;
+	padding-top:25px;
+}
+.sub_right .article .img{
+	width:700px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.sub_right .article .img img{
+	width:700px;
+	height:400px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.sub_right .article p{
+	font-family:楷体;
+	font-size:20px;
+	line-height:150%;
+	padding-top:18px;
+}
+.sub_right .article span#foot{
+	float:right;
+	margin-right:50px;
+}	
